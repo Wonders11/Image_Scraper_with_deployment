@@ -64,7 +64,7 @@ def index():
                                     f.write(image_data)
                     
                     
-                    client = pymongo.MongoClient("mongodb+srv://Mohit_Hedaoo:Mohitmongodb@11@cluster0.nk82xeo.mongodb.net/?retryWrites=true&w=majority")
+                    client = pymongo.MongoClient("mongodb+srv://Mohit_Hedaoo:<password>@cluster0.nk82xeo.mongodb.net/?retryWrites=true&w=majority")
                     db = client['image_scrap']
                     review_col = db['image_scrap_data']
                     review_col.insert_many(img_data)          
